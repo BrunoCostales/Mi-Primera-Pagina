@@ -6,31 +6,56 @@ Gris claro: #ebebeb;
 Verde: #39b54a;
 body{
     */
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    html{
+        margin:auto;
+    }
     body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: 12px;
+    background-color: #ebebeb;
+    margin: auto;
+    
 }
 header{
     background-color:#EAC926;
     font-size: 12px;
+}
+header ul{
+    display: none;
+}
+section h3 {
+    font-family: 'Roboto';
+    color: #666;
+    margin-bottom: 5px;
+
 }
 h3{
     font-size: 24px;
 }
 .precios{
     font-size: 18px;
+    font-weight: bold;
 }
 .descuentos{
     font-size: 16px;
+    color: #39b54a;
 }
 .descripciones{
-    font-size:16px
-    ;
+    font-size:16px;
 }
 .iconos{
     font-size: 2em;
 }
 .burger-menu{
+    margin: auto;
+    padding: 6px;
+    border-radius: 5px;
+    width: 40px;
     text-align:center;
     font-size: 2em;
     color: white;
@@ -44,12 +69,15 @@ h3{
 } 
 .titu{
     text-align: center;
+    margin-top: 7px;
+    margin-bottom: 4px;
 }
 footer{
     text-align: center;
 
 }
 footer h5{
+    margin-top: 5px;
     font-weight: bold;
     
 }
@@ -57,5 +85,94 @@ footer h5{
     color: #666;
 }
 .navegacion{
+    text-align: left;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+}
+main{
+    margin: auto;
+    width: 90vw;
+}
+main article{
+    margin-bottom: 10px;
+    
+    background-color: white;
+    
+    
+}
+.send{
+    display: flex;
+    
+    margin-top: 5px;
+    color: #39b54a ;
+    font-size: 2em;
+}
+.descrp{
+    padding-left: 12px;
+    padding-right: 12px;
+    border-top: solid 0.5px #ebebeb;
+    background-color: white;
+    
+}
+.articulo{
+    color: #666;
+    font-size: 12px;
+    display: none;
+}
+@media(min-width: 361px) {
+    .articulo{
+        display: block;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100,100) ;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-self: flex-start;
+       
+    }
+    a{
+        text-decoration:none;
+        color: black;
+    }
+    .titu{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+}
+@media(min-width: 769px){
+    .articulo{
+    display: block;
+}
+article{
+    box-shadow: 0px 0px 10px rgb(100, 100,100) ;
+}
+.burger-menu{
+    display: none;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.titu{
+    margin-top: 20px;
     text-align: center;
+}
+
 }
