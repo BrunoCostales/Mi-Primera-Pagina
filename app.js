@@ -3,7 +3,7 @@ const path = require ('path') ;
 const app = express ()
 const publicpath = path.resolve (__dirname, './public') ;
 app.use (express.static(publicpath)) ;// De esta manera le indico que voy a trabajar dentro de esa carpeta y no tener problema a la hora de hacer un img src 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Esta corriendo todo") ;
 });
 app.get ('/', ( req, res) => {
